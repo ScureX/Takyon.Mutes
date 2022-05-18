@@ -1,0 +1,16 @@
+{
+	"Name": "Takyon.Mutes",
+	"Description": "Mute players on server",
+	"LoadPriority": 1,
+	"RequiredOnClient": false,
+	"Version": "0.0.1",
+	"Scripts": [
+		{
+			"Path": "takyon_mutes.nut",
+			"RunOn": "SERVER",
+			"ServerCallback": {
+				"After": "takyon_mutesInit"
+			}
+		}
+	]
+}
