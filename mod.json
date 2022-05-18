@@ -4,13 +4,23 @@
 	"LoadPriority": 1,
 	"RequiredOnClient": false,
 	"Version": "0.0.1",
+	"ConVars": [
+		{
+			"Name": "mutes_admin_uids",
+			"DefaultValue": "1006792030176" // list of ppl who should be able to mute etc
+		}
+	],
 	"Scripts": [
 		{
 			"Path": "takyon_mutes.nut",
 			"RunOn": "SERVER",
 			"ServerCallback": {
-				"After": "takyon_mutesInit"
+				"After": "MutesInit"
 			}
+		},
+		{
+			"Path": "takyon_mutes_cfg.nut",
+			"RunOn": "SERVER"
 		}
 	]
 }
